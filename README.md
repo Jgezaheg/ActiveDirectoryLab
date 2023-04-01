@@ -20,7 +20,8 @@ In this lab we're going to walk through how to create an Active Directory home l
 
 <p align="center">
 Install Virtual box and Create VM named DC (Domain Controller): <br/>
-![alt text](https://raw.githubusercontent.com/Jgezaheg/ActiveDirectoryLab/main/Setting%20up%20memory%20and%20processing%20for%20VMs.png)
+ ![Alt text](relative%20path/to/Setting up memory and processing for VMs.png?raw=true "Title")
+
 <br />
 <br />
 
