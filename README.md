@@ -1,7 +1,7 @@
 <h1>Active Directory Homelab</h1>
 
 <h2>Description</h2>
-In this lab we're going to walk through how to create an aActive Directory home lab Environment using Oracle Virtual box. Configuring and running this lab will help develop my understanding of how active directory and windows networking works.
+In this lab we're going to walk through how to create an Active Directory home lab Environment using Oracle Virtual box. Configuring and running this lab will help develop my understanding of how active directory and windows networking works.
 <br />
 
 
