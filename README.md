@@ -171,9 +171,9 @@ Rename the PC by right clicking the start button -> selecting system -> rename t
 
 Finally head back to the DC and open up the Active directory Users and Computers and the DHCP window to verify that there is a connection between the DC and CLIENT1 VMs<br/><br/>
 
-![proof](https://user-images.githubusercontent.com/129562058/229273843-01eb6692-1cf7-4a23-8a65-29a45532b7aa.png)
+![proof](https://user-images.githubusercontent.com/129562058/229273843-01eb6692-1cf7-4a23-8a65-29a45532b7aa.png)<br/><br/><br/><br/>
 
-
+now if you want you can go onto the CLIENT1 vm and use one of the 1000 users that were created previously to log in.
 
 <br />
 <br />
