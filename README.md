@@ -19,8 +19,8 @@ In this lab we're going to walk through how to create an Active Directory home l
 <h2>Program walk-through:</h2>
 
 <p align="center">
-Describe image: <br/>
-<"Insert Imager file">
+Install Virtual box and Create VM named DC (Domain Controller): <br/>
+<![alt text](https://github.com/Jgezahge/ActiveDirectoryLab/blob/[branch]/Setting up memory and processing for VMs.png.jpg?raw=true)>
 <br />
 <br />
 
