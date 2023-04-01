@@ -76,6 +76,11 @@ Navigate to the Server Manager:<br/>
 
 ![installingADDS](https://user-images.githubusercontent.com/129562058/229262262-02f7dc7c-450c-46a0-a0fb-735f5517588d.png)<br/>
 
+Next select the flag in the top right of the Sever Manager to begin **post-deployment-configuration** -> select promote this sever to a domain controller -> select add new forest and name the Root domain anything you want -> select next -> add a password when prompted -> select next until prompted to install -> **VM will restart**.<br/><br/>
+After restarting your sign in screen will have changed to include what ever you named the root domain in the last step (in my case it was mydomain.com)<br/>
+
+![loginAfterADDS set up](https://user-images.githubusercontent.com/129562058/229263060-8c59e459-da08-4397-a253-d226296a92b6.png)<br/>
+
 <br />
 <br />
 
