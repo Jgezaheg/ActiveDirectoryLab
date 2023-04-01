@@ -111,7 +111,29 @@ right click the DC -> configure and enable Routing and Remote Access -> Next -> 
 ![setting up NAT](https://user-images.githubusercontent.com/129562058/229265167-73685ea4-8867-4813-8086-c81cef13a102.png)<br/><br/><br/><br/>
 Make sure the DC has the green indicator rather than red see image below<br/><br/>
 
-![green routing and remote access](https://user-images.githubusercontent.com/129562058/229265255-01c5d066-aecf-4069-9c8e-ee6c116b484d.png)
+![green routing and remote access](https://user-images.githubusercontent.com/129562058/229265255-01c5d066-aecf-4069-9c8e-ee6c116b484d.png)<br/><br/><br/><br/>
+
+<h3><p align="center">
+9. Set up DHCP Server on Domain Controller:</h3> <br/><br/>
+This will allow the windows 10 clients to get an ip adress that will allow them to access the internet even though they are on a private/internal network similarly to an office or school enviornment <br/>
+
+Go to the Server manager -> add roles -> select server (there should only be one similar to the previous steps) -> server roles -> select DHCP Server -> add features -> select next unitl install <br/><br/>
+
+![DHCP](https://user-images.githubusercontent.com/129562058/229265775-9f66f409-7382-4efb-8c20-5d11be7bdea5.png)<br/><br/>
+
+Next set up the scope: select tools in the top right -> DHCP <br/>
+Notice how both ips under the domain are down with a red indicator<br/><br/>
+
+![ip down](https://user-images.githubusercontent.com/129562058/229265906-99c3f135-9298-45f4-ba28-b7f57d5a7f4e.png)<br/><br/>
+
+To fix: Right click one in my case ipv4 -> new scope -> name the scope after whatever the ip range is ( 172.16.0.100-200) -> set ip range<br/>
+
+![set ip range](https://user-images.githubusercontent.com/129562058/229266109-2d247a95-2530-4adf-b389-57641d1df4b1.png)<br/><br/>
+
+skip exclusions and set lease durations to 8 days for the sake of the lab -> select yes to DHCP options -> set default gateway (use domain controllers ip address with NAT configured -> Select next until prompted to finish<br/>
+if indicators are still red right click the DHCP server and select authorize<br/><br/>
+
+![Scope](https://user-images.githubusercontent.com/129562058/229266314-a2ae3946-97f7-4c3d-b5dc-bfaa8d995bbf.png)<br/><br/>
 
 <br />
 <br />
