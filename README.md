@@ -49,6 +49,26 @@ Setup Windows Sever 2019 follow instructions presented on the screen :</h3> <br/
 
 ![WinServer2019 Setup](https://user-images.githubusercontent.com/129562058/229259560-d55eb2a4-b47c-4d77-86b2-b8f9f7f12291.png)
 
+<h3><p align="center">
+Setup IP Adressing :</h3> <br/>
+**NIC (Internet): Automatically gets IP from home Router**<br/>
+**NIC (Intnet or Internal): Needs manual setup**<br/><br/>
+**Select network icon located in the bottom right -> select network -> select change adapter options -> identify which network is which**<br/><br/>
+**Interet will automatically have the ip address assigned to your home network** **internal will need to have an ip address assigned to it**
+
+![setting up ip addressing](https://user-images.githubusercontent.com/129562058/229261156-61fdbbb1-f9aa-494f-a588-a2f9fd5bf6e1.png)<br/><br/>
+
+setup ip address for the internal network<br/><br/>
+**right click the internal network -> select proerties -> double click ipv4 -> select use the following ip addresses**<br/><br/>
+insert the following when promted:<br/>
+IP address: 172.16.0.1<br/>
+Subnet mask: 255.255.255.0<br/>
+Default gateway: **no default gateway because the DC serves as one**<br/><br/>
+
+Prefered DNS: 127.0.0.1 ** computer uses itself as DNS by utilizing loop back address (127.0.0.1)**<br/>
+
+![internalIPsetup](https://user-images.githubusercontent.com/129562058/229261693-d56594c3-f10e-47cb-89f3-e979e423b4b0.png)
+
 <br />
 <br />
 
