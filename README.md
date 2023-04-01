@@ -135,6 +135,46 @@ if indicators are still red right click the DHCP server and select authorize<br/
 
 ![Scope](https://user-images.githubusercontent.com/129562058/229266314-a2ae3946-97f7-4c3d-b5dc-bfaa8d995bbf.png)<br/><br/>
 
+<h3><p align="center">
+10. Creating 1000 user accounts using PowerShell</h3> <br/><br/>
+
+Firstly open internet explorer in the domain controller -> paste this link to Download the script used in PowerShell as well as the list of users first and last names (randomly generated) -> open the folder and go to the names file -> add your name to the list to create an account for yourself<br/>
+
+Next, got to the start menu -> select Windows PowerShell -> right click Windows powershell ISE -> select run as administrator -> open PowerShell CREATE_USERS script previously downloaded<br/>
+
+For the sake of the lab and to be able to run the PowerShell script: In PowerShell type the command: Set-ExecutionPolicy Unrestricted -> Run Script<br/> make sure file is in the right directory by typing the file location into PowerShell: ex cd C:\users\a-jgezahegne\Desktop\AD_PS-master
+<br/><br/>
+
+![psscript](https://user-images.githubusercontent.com/129562058/229271289-a1be35d2-1adf-4416-8819-1d6a7b7be117.png)<br/><br/>
+
+<h3><p align="center">
+10. Create a Windows 10 VM in Virtual box</h3> <br/><br/>
+
+Create the virtual machine the same way demonstrated in steps 1 and 2 but this time select the OS to be Windows 10 (64-bit)<br/>
+Also when setting up the NIC adapter set up only one and select Internal Network for adapter 1 (to get DHCP address from domain controller to emulate office or school enviornment)<br/><br/>
+
+![Clientsetup](https://user-images.githubusercontent.com/129562058/229271758-646ae6c3-0b59-407e-b6df-ee14dfbaa97e.png)<br/><br/>
+
+Open the CLIENT1 vm, select and open the Windows ISO file (mimic step 4)<br/>
+Go through windows 10 setup as prompted (select I do not have a product key) (install windows 10 pro)<br/>
+
+After successfully setting up a Windows 10 account -> Check if the internet is working with the cmd prompt using ipconfig<br/>And ping to google.com<br/>
+
+![ipconfig check](https://user-images.githubusercontent.com/129562058/229272795-0887447a-271b-4240-9279-4a9dfd9bdcc4.png)<br/><br/>
+
+To also demonstrate that CLIENT one is connected to the DC you can ping the domain controller in cmd prompt <br/>
+![pingdomain contrllr](https://user-images.githubusercontent.com/129562058/229273112-76d342b4-a5c5-4e54-a3b8-4f40e06f664f.png)<br/><br/>
+
+Rename the PC by right clicking the start button -> selecting system -> rename this PC advanced (to join the domain) -> Change -> under "member of" select domain and type in whatever name you gave your domain <br/><br/>
+
+![rename this pc advanced](https://user-images.githubusercontent.com/129562058/229273284-5dcbb616-8e67-4b8e-ae99-f5834cc51c5a.png)<br/><br/>
+
+Finally head back to the DC and open up the Active directory Users and Computers and the DHCP window to verify that there is a connection between the DC and CLIENT1 VMs<br/><br/>
+
+![proof](https://user-images.githubusercontent.com/129562058/229273843-01eb6692-1cf7-4a23-8a65-29a45532b7aa.png)
+
+
+
 <br />
 <br />
 
